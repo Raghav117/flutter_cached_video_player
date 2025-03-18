@@ -50,7 +50,7 @@
       "languageVersion": "3.7"
     },
     {
-      "name": "flutter_cached_video_player_android",
+      "name": "flutter_cached_video_android",
       "rootUri": "../../video_player_android",
       "packageUri": "lib/",
       "languageVersion": "3.6"
@@ -200,13 +200,13 @@
       "languageVersion": "3.4"
     },
     {
-      "name": "flutter_cached_video_player",
+      "name": "flutter_cached_video",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2025-03-18T10:12:00.273545Z",
+  "generated": "2025-03-18T11:04:35.253179Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/raghavgarg/Downloads/development/flutter",

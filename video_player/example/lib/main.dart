@@ -9,7 +9,7 @@
 library;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_cached_video_player/video_player.dart';
+import 'package:flutter_cached_video/video_player.dart';
 
 void main() {
   runApp(MaterialApp(home: _App()));
@@ -81,8 +81,7 @@ class _ButterFlyAssetVideoInList extends StatelessWidget {
                     title: Text('Video video'),
                   ),
                   Stack(
-                    alignment:
-                        FractionalOffset.bottomRight +
+                    alignment: FractionalOffset.bottomRight +
                         const FractionalOffset(-0.1, -0.1),
                     children: <Widget>[
                       _ButterFlyAssetVideo(),
@@ -304,20 +303,19 @@ class _ControlsOverlay extends StatelessWidget {
         AnimatedSwitcher(
           duration: const Duration(milliseconds: 50),
           reverseDuration: const Duration(milliseconds: 200),
-          child:
-              controller.value.isPlaying
-                  ? const SizedBox.shrink()
-                  : const ColoredBox(
-                    color: Colors.black26,
-                    child: Center(
-                      child: Icon(
-                        Icons.play_arrow,
-                        color: Colors.white,
-                        size: 100.0,
-                        semanticLabel: 'Play',
-                      ),
+          child: controller.value.isPlaying
+              ? const SizedBox.shrink()
+              : const ColoredBox(
+                  color: Colors.black26,
+                  child: Center(
+                    child: Icon(
+                      Icons.play_arrow,
+                      color: Colors.white,
+                      size: 100.0,
+                      semanticLabel: 'Play',
                     ),
                   ),
+                ),
         ),
         GestureDetector(
           onTap: () {

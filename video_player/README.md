@@ -1,6 +1,6 @@
 <?code-excerpt path-base="example/lib"?>
 
-# flutter_cached_video_player
+# flutter_cached_video
 
 A modified version of `video_player` with caching functionality for Android.
 
@@ -13,7 +13,7 @@ Add the package to your `pubspec.yaml`:
 ```yaml
 
 dependencies:
-  flutter_cached_video_player: ^1.0.0
+  flutter_cached_video: ^1.0.0
 
 
 ## Setup
@@ -63,7 +63,7 @@ The `VideoPlayerOptions.mixWithOthers` option can't be implemented in web, at le
 <?code-excerpt "basic.dart (basic-example)"?>
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_cached_video_player/video_player.dart';
+import 'package:flutter_cached_video/video_player.dart';
 
 void main() => runApp(const VideoApp());
 

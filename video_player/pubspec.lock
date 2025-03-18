@@ -62,7 +62,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_cached_video_player_android:
+  flutter_cached_video_android:
     dependency: "direct main"
     description:
       path: "../video_player_android"

@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter_cached_video_player/video_player.dart';
-import 'package:flutter_cached_video_player_platform_interface/video_player_platform_interface.dart';
+import 'package:flutter_cached_video/video_player.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:video_player_platform_interface/video_player_platform_interface.dart';
 
 import 'video_player_test.dart' show FakeVideoPlayerPlatform;
 
@@ -15,8 +15,8 @@ void main() {
   late FakeVideoPlayerPlatform fakeVideoPlayerPlatform;
 
   setUp(() {
-    VideoPlayerPlatform.instance =
-        fakeVideoPlayerPlatform = FakeVideoPlayerPlatform();
+    VideoPlayerPlatform.instance = (fakeVideoPlayerPlatform =
+        FakeVideoPlayerPlatform()) as VideoPlayerPlatform;
   });
 
   test('plugin initialized', () async {

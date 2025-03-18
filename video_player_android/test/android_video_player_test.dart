@@ -4,11 +4,11 @@
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_cached_video_player_android/src/messages.g.dart';
-import 'package:flutter_cached_video_player_android/src/platform_view_player.dart';
-import 'package:flutter_cached_video_player_android/flutter_cached_video_player_android.dart';
-import 'package:flutter_cached_video_player_platform_interface/video_player_platform_interface.dart';
+import 'package:flutter_cached_video_android/flutter_cached_video_android.dart';
+import 'package:flutter_cached_video_android/src/messages.g.dart';
+import 'package:flutter_cached_video_android/src/platform_view_player.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:video_player_platform_interface/video_player_platform_interface.dart';
 
 import 'test_api.g.dart';
 

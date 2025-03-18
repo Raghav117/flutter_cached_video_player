@@ -1,10 +1,10 @@
-# flutter_cached_video_player_android
+# flutter_cached_video_android
 
-The Android implementation of [`flutter_cached_video_player`][1], a modified version of [`video_player`][2] with caching functionality.
+The Android implementation of [`flutter_cached_video`][1], a modified version of [`video_player`][2] with caching functionality.
 
 ## 📱 Usage
 
-This package is **automatically included** when you use `flutter_cached_video_player`. 
+This package is **automatically included** when you use `flutter_cached_video`. 
 
 You do not need to add this package manually to your `pubspec.yaml` unless you want to import and use any of its APIs directly.
 

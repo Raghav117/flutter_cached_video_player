@@ -18,7 +18,7 @@ public final class GeneratedPluginRegistrant {
     try {
       flutterEngine.getPlugins().add(new io.flutter.plugins.videoplayer.VideoPlayerPlugin());
     } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_cached_video_player_android, io.flutter.plugins.videoplayer.VideoPlayerPlugin", e);
+      Log.e(TAG, "Error registering plugin flutter_cached_video_android, io.flutter.plugins.videoplayer.VideoPlayerPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new dev.flutter.plugins.integration_test.IntegrationTestPlugin());

@@ -6,13 +6,13 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
 import 'dart:typed_data';
-
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+
 import 'package:flutter/services.dart';
-import 'package:flutter_cached_video_player/video_player.dart';
-import 'package:flutter_cached_video_player_platform_interface/video_player_platform_interface.dart';
+import 'package:flutter_cached_video/video_player.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:video_player_platform_interface/video_player_platform_interface.dart';
 
 // TODO(FirentisTFW): Remove the ignore and rename parameters when adding support for platform views.
 // ignore_for_file: avoid_renaming_method_parameters

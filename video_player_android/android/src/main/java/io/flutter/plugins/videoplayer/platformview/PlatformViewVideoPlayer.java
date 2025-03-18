@@ -15,6 +15,16 @@ import io.flutter.plugins.videoplayer.VideoPlayerOptions;
  * A subclass of {@link VideoPlayer} that adds functionality related to platform view as a way of
  * displaying the video in the app.
  */
+
+// Copyright 2013 The Flutter Authors. All rights reserved.
+// Copyright 2025 Raghav Garg. All rights reserved.
+//
+// Use of this source code is governed by a BSD-style license that can be
+// found in the ORIGINAL_LICENSE file.
+//
+// Modifications by Raghav Garg are licensed under the MIT License.
+// See the LICENSE file for details.
+
 public class PlatformViewVideoPlayer extends VideoPlayer {
   @VisibleForTesting
   public PlatformViewVideoPlayer(

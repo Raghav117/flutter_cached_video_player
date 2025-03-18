@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter_cached_video_player/src/closed_caption_file.dart';
+import 'package:flutter_cached_video/src/closed_caption_file.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
