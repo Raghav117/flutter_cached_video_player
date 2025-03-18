@@ -6,7 +6,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter_cached_video_player_android/video_player_android.dart';
+import 'package:flutter_cached_video_player_android/flutter_cached_video_player_android.dart';
 import 'package:flutter_cached_video_player_platform_interface/video_player_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
