@@ -1,15 +1,14 @@
-# video\_player\_android
+# flutter_cached_video_player_android
 
-The Android implementation of [`video_player`][1].
+The Android implementation of [`flutter_cached_video_player`][1], a modified version of [`video_player`][2] with caching functionality.
 
-## Usage
+## 📱 Usage
 
-This package is [endorsed][2], which means you can simply use `video_player`
-normally. This package will be automatically included in your app when you do,
-so you do not need to add it to your `pubspec.yaml`.
+This package is **automatically included** when you use `flutter_cached_video_player`. 
 
-However, if you `import` this package to use any of its APIs directly, you
-should add it to your `pubspec.yaml` as usual.
+You do not need to add this package manually to your `pubspec.yaml` unless you want to import and use any of its APIs directly.
 
-[1]: https://pub.dev/packages/video_player
-[2]: https://flutter.dev/to/endorsed-federated-plugin
+## ⚙️ Importing the Package
+To use any APIs directly from this package, add the following to your `pubspec.yaml`:
+
+```yaml

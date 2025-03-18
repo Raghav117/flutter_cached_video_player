@@ -1,16 +1,20 @@
 <?code-excerpt path-base="example/lib"?>
 
-# Video Player plugin for Flutter
+# flutter_cached_video_player
 
-[![pub package](https://img.shields.io/pub/v/video_player.svg)](https://pub.dev/packages/video_player)
+A modified version of `video_player` with caching functionality for Android.
 
-A Flutter plugin for iOS, Android and Web for playing back video on a Widget surface.
+## 📚 Features
+- Video caching for offline access.
+- Same API as the original `video_player`.
 
-|             | Android | iOS   | macOS  | Web   |
-|-------------|---------|-------|--------|-------|
-| **Support** | SDK 16+ | 12.0+ | 10.14+ | Any\* |
+## 🚀 Getting Started
+Add the package to your `pubspec.yaml`:
+```yaml
 
-![The example app running in iOS](https://github.com/flutter/packages/blob/main/packages/video_player/video_player/doc/demo_ipod.gif?raw=true)
+dependencies:
+  flutter_cached_video_player: ^1.0.0
+
 
 ## Setup
 
@@ -78,7 +82,7 @@ class _VideoAppState extends State<VideoApp> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.networkUrl(Uri.parse(
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4'))
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'))
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
@@ -122,21 +126,7 @@ class _VideoAppState extends State<VideoApp> {
 }
 ```
 
-## Usage
+## Attribution
+This package is based on the Flutter [`video_player`](https://github.com/flutter/packages/tree/main/packages/video_player) package, which is licensed under the BSD 3-Clause License. The original copyright belongs to the Flutter Authors.
 
-The following section contains usage information that goes beyond what is included in the
-documentation in order to give a more elaborate overview of the API.
-
-This is not complete as of now. You can contribute to this section by [opening a pull request](https://github.com/flutter/packages/pulls).
-
-### Playback speed
-
-You can set the playback speed on your `_controller` (instance of `VideoPlayerController`) by
-calling `_controller.setPlaybackSpeed`. `setPlaybackSpeed` takes a `double` speed value indicating
-the rate of playback for your video.
-For example, when given a value of `2.0`, your video will play at 2x the regular playback speed
-and so on.
-
-To learn about playback speed limitations, see the [`setPlaybackSpeed` method documentation](https://pub.dev/documentation/video_player/latest/video_player/VideoPlayerController/setPlaybackSpeed.html).
-
-Furthermore, see the example app for an example playback speed implementation.
+Modifications by Raghav Garg are licensed under the [MIT License](LICENSE).
