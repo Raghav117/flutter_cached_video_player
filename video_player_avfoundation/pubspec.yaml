@@ -1,0 +1,38 @@
+name: flutter_cached_video_player_avfoundation
+description: iOS and macOS implementation of the flutter_cached_video_player plugin.
+repository: https://github.com/Raghav117/flutter_cached_video_player_avfoundation
+publish_to: none
+
+version: 1.0.0
+
+environment:
+  sdk: ^3.4.0
+  flutter: ">=3.22.0"
+
+flutter:
+  plugin:
+    implements: video_player
+    platforms:
+      ios:
+        dartPluginClass: AVFoundationVideoPlayer
+        pluginClass: FVPVideoPlayerPlugin
+        sharedDarwinSource: true
+      macos:
+        dartPluginClass: AVFoundationVideoPlayer
+        pluginClass: FVPVideoPlayerPlugin
+        sharedDarwinSource: true
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_cached_video_player_platform_interface:
+    path: ../video_player_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pigeon: ^22.4.2
+
+topics:
+  - video
+  - video-player

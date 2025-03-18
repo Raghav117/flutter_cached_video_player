@@ -1,0 +1,24 @@
+name: flutter_cached_video_player_platform_interface
+description: A common platform interface for the flutter_cached_video_player plugin.
+repository: https://github.com/Raghav117/flutter_cached_video_player_platform_interface
+
+# NOTE: We strongly prefer non-breaking changes, even at the expense of a
+# less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes
+version: 1.0.0
+
+environment:
+  sdk: ^3.4.0
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+topics:
+  - video
+  - video-player

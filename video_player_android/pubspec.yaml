@@ -1,0 +1,35 @@
+name: flutter_cached_video_player_android
+description: Android implementation of the flutter_cached_video_player plugin.
+repository: https://github.com/Raghav117/flutter_cached_video_player_android
+publish_to: none
+
+
+version: 1.0.0
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+flutter:
+  plugin:
+    implements: video_player
+    platforms:
+      android:
+        dartPluginClass: AndroidVideoPlayer
+        package: io.flutter.plugins.videoplayer
+        pluginClass: VideoPlayerPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_cached_video_player_platform_interface:
+    path: ../video_player_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pigeon: ^22.4.2
+
+topics:
+  - video
+  - video-player
