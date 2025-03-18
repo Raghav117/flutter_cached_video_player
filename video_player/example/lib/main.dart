@@ -9,7 +9,7 @@
 library;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_cached_video/video_player.dart';
+import 'package:flutter_cached_video/flutter_cached_video.dart';
 
 void main() {
   runApp(MaterialApp(home: _App()));

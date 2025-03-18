@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter_cached_video/src/closed_caption_file.dart';
-import 'package:flutter_cached_video/video_player.dart';
+import 'package:flutter_cached_video/flutter_cached_video.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
