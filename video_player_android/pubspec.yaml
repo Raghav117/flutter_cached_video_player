@@ -4,7 +4,7 @@ repository: https://github.com/Raghav117/flutter_cached_video_player/tree/master
 
 
 
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ^3.6.0

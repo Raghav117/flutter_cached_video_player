@@ -26,8 +26,7 @@ dependencies:
   flutter:
     sdk: flutter
   
-  flutter_cached_video_android: 
-    path: ../video_player_android
+  flutter_cached_video_android: 1.0.0
   html: ^0.15.0
   
   video_player_avfoundation: ^2.5.6
