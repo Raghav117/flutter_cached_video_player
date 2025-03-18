@@ -150,6 +150,10 @@ vector_math
 2.14
 file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/vector_math-2.1.4/
 file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib/
+video_player_platform_interface
+3.4
+file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/video_player_platform_interface-6.3.0/
+file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/video_player_platform_interface-6.3.0/lib/
 vm_service
 3.3
 file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/vm_service-14.3.1/
@@ -166,10 +170,6 @@ flutter_cached_video_player_android
 3.6
 file:///Users/raghavgarg/Documents/packages/packages/flutter_cached_video_player/video_player_android/
 file:///Users/raghavgarg/Documents/packages/packages/flutter_cached_video_player/video_player_android/lib/
-flutter_cached_video_player_platform_interface
-3.4
-file:///Users/raghavgarg/Documents/packages/packages/flutter_cached_video_player/video_player_platform_interface/
-file:///Users/raghavgarg/Documents/packages/packages/flutter_cached_video_player/video_player_platform_interface/lib/
 sky_engine
 3.7
 file:///Users/raghavgarg/Downloads/development/flutter/bin/cache/pkg/sky_engine/

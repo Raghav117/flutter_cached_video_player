@@ -110,12 +110,6 @@
       "languageVersion": "3.7"
     },
     {
-      "name": "flutter_cached_video_player_platform_interface",
-      "rootUri": "../../video_player_platform_interface",
-      "packageUri": "lib/",
-      "languageVersion": "3.4"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///Users/raghavgarg/Downloads/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -254,6 +248,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "video_player_platform_interface",
+      "rootUri": "file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/video_player_platform_interface-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "vm_service",
       "rootUri": "file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/vm_service-14.3.1",
       "packageUri": "lib/",
@@ -278,7 +278,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-03-18T08:59:27.120509Z",
+  "generated": "2025-03-18T09:42:38.522650Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/raghavgarg/Downloads/development/flutter",
