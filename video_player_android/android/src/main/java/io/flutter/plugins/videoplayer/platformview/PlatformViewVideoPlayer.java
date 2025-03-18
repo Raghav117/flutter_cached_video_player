@@ -1,7 +1,3 @@
-// Copyright 2013 The Flutter Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 package io.flutter.plugins.videoplayer.platformview;
 
 import android.content.Context;
@@ -22,11 +18,12 @@ import io.flutter.plugins.videoplayer.VideoPlayerOptions;
 public class PlatformViewVideoPlayer extends VideoPlayer {
   @VisibleForTesting
   public PlatformViewVideoPlayer(
-      @NonNull VideoPlayerCallbacks events,
-      @NonNull MediaItem mediaItem,
-      @NonNull VideoPlayerOptions options,
-      @NonNull ExoPlayerProvider exoPlayerProvider) {
-    super(events, mediaItem, options, exoPlayerProvider);
+          @NonNull Context context,
+          @NonNull VideoPlayerCallbacks events,
+          @NonNull MediaItem mediaItem,
+          @NonNull VideoPlayerOptions options,
+          @NonNull ExoPlayerProvider exoPlayerProvider) {
+    super(context, events, mediaItem, options, exoPlayerProvider); // Correct parameter order
   }
 
   /**
@@ -40,20 +37,21 @@ public class PlatformViewVideoPlayer extends VideoPlayer {
    */
   @NonNull
   public static PlatformViewVideoPlayer create(
-      @NonNull Context context,
-      @NonNull VideoPlayerCallbacks events,
-      @NonNull VideoAsset asset,
-      @NonNull VideoPlayerOptions options) {
+          @NonNull Context context,
+          @NonNull VideoPlayerCallbacks events,
+          @NonNull VideoAsset asset,
+          @NonNull VideoPlayerOptions options) {
     return new PlatformViewVideoPlayer(
-        events,
-        asset.getMediaItem(),
-        options,
-        () -> {
-          ExoPlayer.Builder builder =
-              new ExoPlayer.Builder(context)
-                  .setMediaSourceFactory(asset.getMediaSourceFactory(context));
-          return builder.build();
-        });
+            context, // Pass context first
+            events,
+            asset.getMediaItem(),
+            options,
+            () -> {
+              ExoPlayer.Builder builder =
+                      new ExoPlayer.Builder(context)
+                              .setMediaSourceFactory(asset.getMediaSourceFactory(context));
+              return builder.build();
+            });
   }
 
   @NonNull

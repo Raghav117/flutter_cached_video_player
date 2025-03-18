@@ -49,6 +49,7 @@ public final class TextureVideoPlayer extends VideoPlayer
       @NonNull VideoAsset asset,
       @NonNull VideoPlayerOptions options) {
     return new TextureVideoPlayer(
+      context,
         events,
         surfaceProducer,
         asset.getMediaItem(),
@@ -63,12 +64,13 @@ public final class TextureVideoPlayer extends VideoPlayer
 
   @VisibleForTesting
   public TextureVideoPlayer(
+       @NonNull Context context,
       @NonNull VideoPlayerCallbacks events,
       @NonNull TextureRegistry.SurfaceProducer surfaceProducer,
       @NonNull MediaItem mediaItem,
       @NonNull VideoPlayerOptions options,
       @NonNull ExoPlayerProvider exoPlayerProvider) {
-    super(events, mediaItem, options, exoPlayerProvider);
+    super(context,events, mediaItem, options, exoPlayerProvider);
 
     this.surfaceProducer = surfaceProducer;
     surfaceProducer.setCallback(this);
