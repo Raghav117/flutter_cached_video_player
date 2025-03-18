@@ -1,6 +1,6 @@
 name: flutter_cached_video_player_web
 description: Web platform implementation of flutter_cached_video_player.
-repository: https://github.com/Raghav117/flutter_cached_video_player_web
+repository: https://github.com/Raghav117/flutter_cached_video_player
 publish_to: none
 
 version: 1.0.0
@@ -26,7 +26,7 @@ dependencies:
 
   flutter_web_plugins:
     sdk: flutter
-    
+
   web: ">=0.5.1 <2.0.0"
 
 dev_dependencies:
