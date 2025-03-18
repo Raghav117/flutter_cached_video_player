@@ -228,15 +228,15 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "1.0.1"
+    version: "1.0.2"
   flutter_cached_video_android:
     dependency: transitive
     description:
       name: flutter_cached_video_android
-      sha256: "3b2620c1fe651add31e21fd25c888eae10b669bffeae402ba2b26f522c470369"
+      sha256: "3a6f668c3fbeee34f16d9a5ca05bb167a1c9468cd355ec12f57520dbb3a6641e"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.3"
   flutter_driver:
     dependency: transitive
     description: flutter

@@ -6,8 +6,8 @@ A modified version of `video_player` with caching functionality for Android.
 - **Added support for video caching up to 512 MB.**
 - **Implemented automatic cache management and seamless video playback.**
 - **Integrated with `flutter_cached_video` to provide seamless Android support.**
-- Video caching for offline access.
-- Same API as the original `video_player`.
+- **Video caching for offline access.**
+- **Same API as the original `video_player`.**
 
 ## 🚀 Getting Started
 Add the package to your `pubspec.yaml`:

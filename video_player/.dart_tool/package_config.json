@@ -51,7 +51,7 @@
     },
     {
       "name": "flutter_cached_video_android",
-      "rootUri": "file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/flutter_cached_video_android-1.0.1",
+      "rootUri": "file:///Users/raghavgarg/.pub-cache/hosted/pub.dev/flutter_cached_video_android-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "3.6"
     },
@@ -206,7 +206,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2025-03-18T12:52:05.700925Z",
+  "generated": "2025-03-18T13:51:41.168772Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/raghavgarg/Downloads/development/flutter",

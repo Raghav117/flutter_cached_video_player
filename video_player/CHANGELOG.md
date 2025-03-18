@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2025-03-18
+### 🚀 Enhancements
+- Revamped deprecated member functions for better performance and compatibility.
+- Enhanced `README.md` with improved instructions and updated API references.
+
+
 ## [1.0.1] - 2025-03-18
 ### 📝 Documentation
 - Updated `README.md` format for better readability and consistency.

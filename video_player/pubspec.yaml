@@ -1,10 +1,10 @@
 name: flutter_cached_video
-description: An enhanced version of the video_player package that adds caching functionality for Android to improve video performance and offline access.
+description: Enhanced video_player with Android caching, supports 512 MB, auto-clears old videos for smooth playback.
 repository: https://github.com/Raghav117/flutter_cached_video_player
 homepage: https://github.com/Raghav117/flutter_cached_video_player
 
 
-version: 1.0.1
+version: 1.0.2
 
 environment:
   sdk: ^3.4.0
@@ -26,7 +26,7 @@ dependencies:
   flutter:
     sdk: flutter
   
-  flutter_cached_video_android: ^1.0.1
+  flutter_cached_video_android: ^1.0.3
   html: ^0.15.0
   
   video_player_avfoundation: ^2.5.6
