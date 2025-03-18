@@ -1,6 +1,6 @@
 name: flutter_cached_video_android
 description: Android implementation of the flutter_cached_video plugin.
-repository: https://github.com/Raghav117/flutter_cached_video
+repository: https://github.com/Raghav117/flutter_cached_video_player/tree/master/video_player_android
 publish_to: none
 
 
