@@ -1,10 +1,10 @@
 name: flutter_cached_video_android
-description: Android implementation of the flutter_cached_video plugin.
+description: flutter_cached_video_android is the Android implementation of the flutter_cached_video plugin, offering video caching up to 512 MB. When the cache limit is exceeded, the oldest videos are automatically removed, ensuring optimal storage management. Built on ExoPlayer, it provides seamless playback, reducing buffering and enhancing the user experience. The package maintains the same API as video_player, making it easy to integrate. Ideal for content-heavy apps, it improves video performance by enabling efficient caching and offline availability.
 repository: https://github.com/Raghav117/flutter_cached_video_player/tree/master/video_player_android
 
 
 
-version: 1.0.1
+version: 1.0.2
 
 environment:
   sdk: ^3.6.0

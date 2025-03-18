@@ -270,8 +270,9 @@ void main() {
   group('VideoPlayerController', () {
     group('legacy initialize', () {
       test('network', () async {
-        final VideoPlayerController controller = VideoPlayerController.network(
-          'https://127.0.0.1',
+        final VideoPlayerController controller =
+            VideoPlayerController.networkUrl(
+          Uri.parse('https://127.0.0.1'),
         );
         await controller.initialize();
 
@@ -284,8 +285,9 @@ void main() {
       });
 
       test('network with hint', () async {
-        final VideoPlayerController controller = VideoPlayerController.network(
-          'https://127.0.0.1',
+        final VideoPlayerController controller =
+            VideoPlayerController.networkUrl(
+          Uri.parse('https://127.0.0.1'),
           formatHint: VideoFormat.dash,
         );
         await controller.initialize();
@@ -302,8 +304,9 @@ void main() {
       });
 
       test('network with some headers', () async {
-        final VideoPlayerController controller = VideoPlayerController.network(
-          'https://127.0.0.1',
+        final VideoPlayerController controller =
+            VideoPlayerController.networkUrl(
+          Uri.parse('https://127.0.0.1'),
           httpHeaders: <String, String>{'Authorization': 'Bearer token'},
         );
         await controller.initialize();
@@ -469,7 +472,9 @@ void main() {
         'successful initialize on controller with error clears error',
         () async {
           final VideoPlayerController controller =
-              VideoPlayerController.network('https://127.0.0.1');
+              VideoPlayerController.networkUrl(
+            Uri.parse('https://127.0.0.1'),
+          );
           fakeVideoPlayerPlatform.forceInitError = true;
           await controller.initialize().catchError((dynamic e) {});
           expect(controller.value.hasError, equals(true));
@@ -957,8 +962,9 @@ void main() {
       });
 
       testWidgets('playback status', (WidgetTester tester) async {
-        final VideoPlayerController controller = VideoPlayerController.network(
-          'https://.0.0.1',
+        final VideoPlayerController controller =
+            VideoPlayerController.networkUrl(
+          Uri.parse('https://127.0.0.1'),
         );
         await controller.initialize();
         expect(controller.value.isPlaying, isFalse);

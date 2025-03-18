@@ -27,7 +27,8 @@ Android
 
   If you are using network-based videos, ensure that the following permission is present in your Android Manifest file, located in:
   ```xml
-  <uses-permission android:name="android.permission.INTERNET"/>```
+  <uses-permission android:name="android.permission.INTERNET"/>
+  ```
 
 Web
   The Web platform does not support dart:io, so avoid using the VideoPlayerController.file constructor for the plugin. Using this constructor attempts to create a VideoPlayerController.file, which will throw an UnimplementedError.
@@ -44,8 +45,9 @@ Web
 
 📖 Example
 
-```import 'package:flutter/material.dart';
-import 'package:flutter_cached_video/video_player.dart';
+```
+import 'package:flutter/material.dart';
+import 'package:flutter_cached_video/flutter_cached_video.dart';
 
 void main() => runApp(const VideoApp());
 
@@ -105,13 +107,11 @@ class _VideoAppState extends State<VideoApp> {
     _controller.dispose();
     super.dispose();
   }
-}```
+}
+```
 
 🙏 Attribution
 
 This package is based on the Flutter video_player package, which is licensed under the BSD 3-Clause License. The original copyright belongs to the Flutter Authors.
 
 Modifications by Raghav Garg are licensed under the MIT License.
-
-
-

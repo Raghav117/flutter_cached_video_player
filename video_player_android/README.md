@@ -23,10 +23,11 @@ To use video caching in your Flutter app, add the package to your `pubspec.yaml`
 ```yaml
 dependencies:
   flutter_cached_video: ^1.0.0
+```
 
 Then, use the CachedVideoPlayerController to play videos with caching support:
 
-```
+
 <?code-excerpt "basic.dart (basic-example)"?>
 ```dart
 import 'package:flutter_cached_video/flutter_cached_video.dart';
