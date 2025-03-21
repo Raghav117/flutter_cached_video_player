@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## [1.0.3] - 2025-03-21
+### Fixed
+- Replaced deprecated `buildView` method with `buildViewWithOptions()` for improved compatibility.
+
+
 ## [1.0.2] - 2025-03-18
 ### 🚀 Enhancements
 - Revamped deprecated member functions for better performance and compatibility.
